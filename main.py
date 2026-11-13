@@ -1,8 +1,6 @@
 from drafter import *
 from dataclasses import dataclass
-from Final_Movies import Movie
-from Final_Movies import get_movies
-
+from Final_Movies import Movie, get_movies
 
 set_website_style("water")
 #I used AI to help improve the appearance of my movie recommendation website. Built in dark theme.
