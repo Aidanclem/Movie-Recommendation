@@ -1,4 +1,3 @@
-set_website_title("Movie Reccomendation")
 set_site_information(
     author="",
     description="",
