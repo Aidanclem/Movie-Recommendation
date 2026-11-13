@@ -1,6 +1,7 @@
 from drafter import *
 from dataclasses import dataclass
-from Final_Movies import Movie, get_movies
+from Final_Movies import Movie
+from Final_Movies import get_movies
 
 
 set_website_style("water")
