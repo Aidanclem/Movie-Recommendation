@@ -1,10 +1,3 @@
-set_site_information(
-    author="",
-    description="",
-    sources="",
-    planning=[""],
-    links=[""]
-)
 from drafter import *
 from dataclasses import dataclass
 from Final_Movies import Movie, get_movies
