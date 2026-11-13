@@ -1,10 +1,10 @@
-set_website_title("Corgi Cafe")
+set_website_title("Movie Reccomendation")
 set_site_information(
-    author="Your Name",
-    description="Order snacks for very good dogs.",
-    sources="Thanks to the Drafter docs and my study group.",
-    planning=["plan.pdf", "design.pdf"],
-    links=["https://github.com/your-username/your-repository"]
+    author="",
+    description="",
+    sources="",
+    planning=[""],
+    links=[""]
 )
 from drafter import *
 from dataclasses import dataclass
