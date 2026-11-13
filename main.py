@@ -1,3 +1,11 @@
+set_website_title("Corgi Cafe")
+set_site_information(
+    author="Your Name",
+    description="Order snacks for very good dogs.",
+    sources="Thanks to the Drafter docs and my study group.",
+    planning=["plan.pdf", "design.pdf"],
+    links=["https://github.com/your-username/your-repository"]
+)
 from drafter import *
 from dataclasses import dataclass
 from Final_Movies import Movie, get_movies
@@ -18,7 +26,7 @@ class State:
 
 
 def card(*content):
-   """
+    """
     Creates a styled card to organize content on the website.
 
     AI Assistance: ChatGPT helped me create this function to improve
