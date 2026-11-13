@@ -105,7 +105,7 @@ def filter_page(state: State) -> Page:
     """
     Creates the page where users select their movie preferences.
 
-    AI Assistance: ChatGPT helped me improve the layout and
+AI Assistance: ChatGPT helped me improve the layout and
     appearance of this page while keeping the filtering
     functionality the same.
     """
