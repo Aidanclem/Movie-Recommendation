@@ -352,30 +352,62 @@ AI Assistance: ChatGPT helped me improve the layout and
             TextBox("rating", state.minimum_rating, "number"),
             Text("Enter 0 for any rating.", style_color="#aeb3bd")
         ),
-        card(
-            Header("3. Streaming Services"),
-            Text("Select any number of services. Leave all boxes unchecked for no preference."),
-            RelatedCheckBox("services", "Netflix", "Netflix" in state.selected_services),
-            Text("Netflix"),
-            RelatedCheckBox("services", "Hulu", "Hulu" in state.selected_services),
-            Text("Hulu"),
-            RelatedCheckBox("services", "Disney+", "Disney+" in state.selected_services),
-            Text("Disney+"),
-            RelatedCheckBox("services", "Max (HBO Max)", "Max (HBO Max)" in state.selected_services),
-            Text("Max (HBO Max)"),
-            RelatedCheckBox("services", "Amazon Prime Video", "Amazon Prime Video" in state.selected_services),
-            Text("Amazon Prime Video"),
-            RelatedCheckBox("services", "Paramount+", "Paramount+" in state.selected_services),
-            Text("Paramount+"),
-            RelatedCheckBox("services", "Peacock", "Peacock" in state.selected_services),
-            Text("Peacock"),
-            RelatedCheckBox("services", "Apple TV", "Apple TV" in state.selected_services),
-            Text("Apple TV"),
-            RelatedCheckBox("services", "Tubi (Free)", "Tubi (Free)" in state.selected_services),
-            Text("Tubi (Free)"),
-            RelatedCheckBox("services", "AMC+", "AMC+" in state.selected_services),
-            Text("AMC+")
-        ),
+        
+card(
+    Header("3. Streaming Services"),
+    Text("Select any number of services. Leave all boxes unchecked for no preference."),
+
+    Div(
+        RelatedCheckBox("services", "Netflix", "Netflix" in state.selected_services),
+        " Netflix",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Hulu", "Hulu" in state.selected_services),
+        " Hulu",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Disney+", "Disney+" in state.selected_services),
+        " Disney+",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Max (HBO Max)", "Max (HBO Max)" in state.selected_services),
+        " Max (HBO Max)",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Amazon Prime Video", "Amazon Prime Video" in state.selected_services),
+        " Amazon Prime Video",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Paramount+", "Paramount+" in state.selected_services),
+        " Paramount+",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Peacock", "Peacock" in state.selected_services),
+        " Peacock",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Apple TV", "Apple TV" in state.selected_services),
+        " Apple TV",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "Tubi (Free)", "Tubi (Free)" in state.selected_services),
+        " Tubi (Free)",
+        style_margin="8px 0"
+    ),
+    Div(
+        RelatedCheckBox("services", "AMC+", "AMC+" in state.selected_services),
+        " AMC+",
+        style_margin="8px 0"
+    )
+),
         red_button("Save Preferences", "save_filters"),
         nav_button("Back to Home", "index")
     ])
